@@ -1,10 +1,9 @@
 import { NAV_LINKS } from "@/data/Data"
 
 const F = { sans: "'DM Sans', sans-serif", display: "'Lexend', sans-serif", mono: "'DM Mono', monospace" }
-type Page = 'Home' | 'Schemes' | 'Services' | 'Certificates' | 'Help Desk'
 
 
-function Footer({ setPage }: { setPage: (p: Page) => void }) {
+function Footer({ setPage }: { setPage: (p: any) => void }) {
   return (
     <footer style={{ background: '#091d3e', color: '#7a9bbf', fontFamily: F.sans }}>
       <div style={{ maxWidth: 1280, margin: '0 auto', padding: '56px 24px 40px', display: 'grid', gridTemplateColumns: '2fr 1fr 1fr 1fr', gap: 48 }}>

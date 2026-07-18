@@ -40,6 +40,7 @@ function ServicesPage() {
                     <div style={{ background: '#f0f4f9', borderRadius: 6, padding: '4px 10px', fontSize: 11, color: '#4a5568' }}>₹ {svc.fee}</div>
                   </div>
                 </div>
+                <a href={svc.applyUrl} target="_blank" rel="noreferrer" style={{ alignSelf: 'stretch', padding: '10px 14px', marginTop: 'auto', borderRadius: 10, background: svc.color, color: '#fff', textDecoration: 'none', fontSize: 13, fontWeight: 700, textAlign: 'center' }}>Apply Now</a>
               </div>
             ))}
           </div>

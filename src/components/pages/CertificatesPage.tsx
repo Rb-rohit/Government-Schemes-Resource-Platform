@@ -72,7 +72,7 @@ function CertificatesPage() {
                     </div>
                   </div>
 
-                  <button style={{ width: '100%', padding: '13px', background: '#0f2d5e', border: 'none', borderRadius: 8, color: '#fff', fontWeight: 700, fontSize: 14, cursor: 'pointer', fontFamily: F.sans }}>Apply at Nearest CSC Centre →</button>
+                  <a href={selected.applyUrl} target="_blank" rel="noreferrer" style={{ display: 'inline-flex', width: '100%', padding: '13px', background: '#0f2d5e', border: 'none', borderRadius: 8, color: '#fff', fontWeight: 700, fontSize: 14, cursor: 'pointer', fontFamily: F.sans, justifyContent: 'center', textDecoration: 'none' }}>Apply at Nearest CSC Centre →</a>
                 </div>
               </div>
             )}

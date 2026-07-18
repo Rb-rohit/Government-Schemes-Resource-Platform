@@ -27,8 +27,8 @@ function SchemeCard({ scheme }: { scheme: typeof SCHEMES[0] }) {
         ))}
       </div>
       <div style={{ display: 'flex', gap: 8 }}>
-        <button style={{ flex: 1, padding: '9px', border: '1.5px solid #0f2d5e', borderRadius: 7, background: 'transparent', color: '#0f2d5e', fontSize: 13, fontWeight: 600, cursor: 'pointer', fontFamily: F.sans }}>Check Eligibility</button>
-        <button style={{ flex: 1, padding: '9px', border: 'none', borderRadius: 7, background: '#0f2d5e', color: '#fff', fontSize: 13, fontWeight: 600, cursor: 'pointer', fontFamily: F.sans }}>Apply Now →</button>
+        <a href={scheme.applyUrl} target="_blank" rel="noreferrer" style={{ flex: 1, padding: '9px', border: '1.5px solid #0f2d5e', borderRadius: 7, background: 'transparent', color: '#0f2d5e', fontSize: 13, fontWeight: 600, textAlign: 'center', textDecoration: 'none', cursor: 'pointer', fontFamily: F.sans }}>Check Eligibility</a>
+        <a href={scheme.applyUrl} target="_blank" rel="noreferrer" style={{ flex: 1, padding: '9px', border: 'none', borderRadius: 7, background: '#0f2d5e', color: '#fff', fontSize: 13, fontWeight: 600, textAlign: 'center', textDecoration: 'none', cursor: 'pointer', fontFamily: F.sans }}>Apply Now →</a>
       </div>
     </div>
   )

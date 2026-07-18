@@ -3,7 +3,7 @@ import SchemeCard from "../SchemeCard";
 import { ALL_SERVICES, CATEGORIES, NEWS, SCHEMES, STATS } from "@/data/Data";
 
 const F = { sans: "'DM Sans', sans-serif", display: "'Lexend', sans-serif", mono: "'DM Mono', monospace" }
-type Page = 'Home' | 'Schemes' | 'Services' | 'Certificates' | 'Help Desk'
+type Page = 'Home' | 'Schemes' | 'Services' | 'Certificates' | 'Help Desk' | 'Jobs' | 'Dashboard' | 'Login' | 'Register'
 
 
 function HomePage({ navigate }: { navigate: (p: Page) => void }) {

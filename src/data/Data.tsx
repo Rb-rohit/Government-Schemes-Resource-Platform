@@ -1,6 +1,6 @@
-type Page = 'Home' | 'Schemes' | 'Services' | 'Certificates' | 'Help Desk'
+type Page = 'Home' | 'Schemes' | 'Services' | 'Certificates' | 'Help Desk' | 'Jobs' | 'Dashboard' | 'Login' | 'Register'
 
-export const NAV_LINKS: Page[] = ['Home', 'Schemes', 'Services', 'Certificates', 'Help Desk']
+export const NAV_LINKS: Page[] = ['Home', 'Schemes', 'Services', 'Certificates', 'Help Desk', 'Jobs']
 
 export const STATS = [
   { value: '5.5L+', label: 'CSC Centres', icon: '🏢' },
@@ -27,6 +27,7 @@ export const SCHEMES = [
     benefit: '₹6,000/year', beneficiaries: '12.5 Cr farmers',
     description: 'Direct income support to small and marginal farmer families holding cultivable land up to 2 hectares.',
     status: 'Active',
+    applyUrl: 'https://pmkisan.gov.in/',
   },
   {
     id: 2, title: 'Ayushman Bharat PM-JAY', ministry: 'Ministry of Health',
@@ -34,6 +35,7 @@ export const SCHEMES = [
     benefit: '₹5L cover/year', beneficiaries: '50 Cr beneficiaries',
     description: "World's largest health assurance scheme providing ₹5 lakh per family per year for secondary and tertiary hospitalisation.",
     status: 'Active',
+    applyUrl: 'https://pmjay.gov.in/',
   },
   {
     id: 3, title: 'PM Awas Yojana (Urban)', ministry: 'MoHUA',
@@ -41,6 +43,7 @@ export const SCHEMES = [
     benefit: 'Subsidy up to ₹2.67L', beneficiaries: '1.18 Cr houses',
     description: 'Provides affordable housing to the urban poor with a focus on slum rehabilitation and credit-linked subsidy.',
     status: 'Active',
+    applyUrl: 'https://pmaymis.gov.in/',
   },
   {
     id: 4, title: 'Pradhan Mantri Mudra Yojana', ministry: 'Ministry of Finance',
@@ -62,6 +65,7 @@ export const SCHEMES = [
     benefit: '₹500–₹20,000/month', beneficiaries: '1.5 Cr students',
     description: 'One-stop solution for students to apply for pre-matric, post-matric, and merit-cum-means scholarships.',
     status: 'Active',
+    applyUrl: 'https://scholarships.gov.in/',
   },
   {
     id: 7, title: 'PM Fasal Bima Yojana', ministry: 'Ministry of Agriculture',
@@ -69,6 +73,7 @@ export const SCHEMES = [
     benefit: 'Crop loss coverage', beneficiaries: '5.6 Cr farmers',
     description: 'Comprehensive crop insurance scheme covering pre-sowing to post-harvest losses due to natural calamities.',
     status: 'Active',
+    applyUrl: 'https://pmfby.gov.in/',
   },
   {
     id: 8, title: 'Atal Pension Yojana', ministry: 'Ministry of Finance',
@@ -76,6 +81,7 @@ export const SCHEMES = [
     benefit: '₹1,000–5,000/month', beneficiaries: '6.2 Cr subscribers',
     description: 'Pension scheme for unorganised sector workers guaranteeing a fixed monthly pension after age 60.',
     status: 'Active',
+    applyUrl: 'https://npscra.nsdl.co.in/',
   },
   {
     id: 9, title: 'PM Ujjwala Yojana', ministry: 'Ministry of Petroleum',
@@ -83,26 +89,27 @@ export const SCHEMES = [
     benefit: 'Free LPG connection', beneficiaries: '9.6 Cr households',
     description: 'Provides LPG connections to women from BPL households to replace harmful cooking fuels.',
     status: 'Active',
+    applyUrl: 'https://pmuy.gov.in/',
   },
 ]
 
 export const ALL_SERVICES = [
-  { label: 'Aadhaar Update', icon: '🪪', color: '#0f2d5e', category: 'Identity', time: '3–5 days', fee: 'Free' },
-  { label: 'PAN Card Apply', icon: '🟧', color: '#e8860a', category: 'Identity', time: '7–15 days', fee: '₹107' },
-  { label: 'Passport Services', icon: '📗', color: '#157a3c', category: 'Travel', time: '30–45 days', fee: '₹1,500' },
-  { label: 'Driving Licence', icon: '🚗', color: '#0d6efd', category: 'Transport', time: '10–14 days', fee: '₹200' },
-  { label: 'Ration Card', icon: '🌾', color: '#157a3c', category: 'Welfare', time: '15–30 days', fee: 'Free' },
-  { label: 'Birth Certificate', icon: '👶', color: '#7c3aed', category: 'Civil', time: '3–7 days', fee: '₹50' },
-  { label: 'Income Certificate', icon: '📋', color: '#0891b2', category: 'Civil', time: '7–10 days', fee: '₹20' },
-  { label: 'Land Records', icon: '🗺️', color: '#dc2626', category: 'Revenue', time: 'Instant', fee: '₹30' },
-  { label: 'Utility Bill Pay', icon: '💡', color: '#e8860a', category: 'Finance', time: 'Instant', fee: 'Free' },
-  { label: 'Insurance (PMJJBY)', icon: '🛡️', color: '#0f2d5e', category: 'Finance', time: '1–2 days', fee: '₹436/yr' },
-  { label: 'Pension (NPS)', icon: '👴', color: '#7c3aed', category: 'Finance', time: '7 days', fee: '₹500 min' },
-  { label: 'GST Registration', icon: '🏪', color: '#157a3c', category: 'Business', time: '3–7 days', fee: 'Free' },
-  { label: 'Voter ID Card', icon: '🗳️', color: '#0d6efd', category: 'Identity', time: '30 days', fee: 'Free' },
-  { label: 'Caste Certificate', icon: '📜', color: '#be185d', category: 'Civil', time: '7–15 days', fee: '₹20' },
-  { label: 'Death Certificate', icon: '📄', color: '#6b7a8d', category: 'Civil', time: '3–7 days', fee: '₹50' },
-  { label: 'Trade Licence', icon: '🏬', color: '#0891b2', category: 'Business', time: '15–30 days', fee: '₹500' },
+  { label: 'Aadhaar Update', icon: '🪪', color: '#0f2d5e', category: 'Identity', time: '3–5 days', fee: 'Free', applyUrl: 'https://uidai.gov.in/' },
+  { label: 'PAN Card Apply', icon: '🟧', color: '#e8860a', category: 'Identity', time: '7–15 days', fee: '₹107', applyUrl: 'https://www.onlineservices.nsdl.com/' },
+  { label: 'Passport Services', icon: '📗', color: '#157a3c', category: 'Travel', time: '30–45 days', fee: '₹1,500', applyUrl: 'https://passportindia.gov.in/' },
+  { label: 'Driving Licence', icon: '🚗', color: '#0d6efd', category: 'Transport', time: '10–14 days', fee: '₹200', applyUrl: 'https://parivahan.gov.in/' },
+  { label: 'Ration Card', icon: '🌾', color: '#157a3c', category: 'Welfare', time: '15–30 days', fee: 'Free', applyUrl: 'https://nfsa.gov.in/' },
+  { label: 'Birth Certificate', icon: '👶', color: '#7c3aed', category: 'Civil', time: '3–7 days', fee: '₹50', applyUrl: 'https://india.gov.in/' },
+  { label: 'Income Certificate', icon: '📋', color: '#0891b2', category: 'Civil', time: '7–10 days', fee: '₹20', applyUrl: 'https://india.gov.in/' },
+  { label: 'Land Records', icon: '🗺️', color: '#dc2626', category: 'Revenue', time: 'Instant', fee: '₹30', applyUrl: 'https://landrecords.nic.in/' },
+  { label: 'Utility Bill Pay', icon: '💡', color: '#e8860a', category: 'Finance', time: 'Instant', fee: 'Free', applyUrl: 'https://billpayment.csc.gov.in/' },
+  { label: 'Insurance (PMJJBY)', icon: '🛡️', color: '#0f2d5e', category: 'Finance', time: '1–2 days', fee: '₹436/yr', applyUrl: 'https://pmjjby.gov.in/' },
+  { label: 'Pension (NPS)', icon: '👴', color: '#7c3aed', category: 'Finance', time: '7 days', fee: '₹500 min', applyUrl: 'https://npscra.nsdl.co.in/' },
+  { label: 'GST Registration', icon: '🏪', color: '#157a3c', category: 'Business', time: '3–7 days', fee: 'Free', applyUrl: 'https://gst.gov.in/' },
+  { label: 'Voter ID Card', icon: '🗳️', color: '#0d6efd', category: 'Identity', time: '30 days', fee: 'Free', applyUrl: 'https://eci.gov.in/' },
+  { label: 'Caste Certificate', icon: '📜', color: '#be185d', category: 'Civil', time: '7–15 days', fee: '₹20', applyUrl: 'https://india.gov.in/' },
+  { label: 'Death Certificate', icon: '📄', color: '#6b7a8d', category: 'Civil', time: '3–7 days', fee: '₹50', applyUrl: 'https://india.gov.in/' },
+  { label: 'Trade Licence', icon: '🏬', color: '#0891b2', category: 'Business', time: '15–30 days', fee: '₹500', applyUrl: 'https://india.gov.in/' },
 ]
 
 export const CERTIFICATES = [
@@ -111,48 +118,56 @@ export const CERTIFICATES = [
     time: '7–10 days', fee: '₹20', docs: ['Aadhaar Card', 'Ration Card', 'Self-declaration form'],
     desc: 'Required for government scheme eligibility, scholarships, and fee waivers. Issued by the Tehsildar/SDM.',
     color: '#0891b2', bg: '#e0f7fa',
+    applyUrl: 'https://india.gov.in/',
   },
   {
     title: 'Caste Certificate', icon: '📜', ministry: 'State Revenue Dept.',
     time: '7–15 days', fee: '₹20', docs: ['Aadhaar Card', 'Father\'s caste proof', 'Ration Card'],
     desc: 'Issued to SC/ST/OBC citizens for availing reservations in education and employment.',
     color: '#be185d', bg: '#fce7f3',
+    applyUrl: 'https://india.gov.in/',
   },
   {
     title: 'Domicile Certificate', icon: '🏠', ministry: 'State Revenue Dept.',
     time: '10–15 days', fee: '₹50', docs: ['Aadhaar Card', 'Proof of residence (3+ years)', 'Birth certificate'],
     desc: 'Proves state residency for state government jobs, education reservations, and local scheme benefits.',
     color: '#dc2626', bg: '#fff0f0',
+    applyUrl: 'https://india.gov.in/',
   },
   {
     title: 'Birth Certificate', icon: '👶', ministry: 'Municipal Corp / Gram Panchayat',
     time: '3–7 days', fee: '₹50', docs: ['Hospital discharge slip or birth record', 'Parents\' Aadhaar', 'Marriage certificate'],
     desc: 'Essential document for school admission, passport, Aadhaar, and all future government registrations.',
     color: '#7c3aed', bg: '#f3eeff',
+    applyUrl: 'https://india.gov.in/',
   },
   {
     title: 'Death Certificate', icon: '📄', ministry: 'Municipal Corp / Gram Panchayat',
     time: '3–7 days', fee: '₹50', docs: ['Hospital death record or cremation receipt', 'Deceased\'s Aadhaar', 'Applicant Aadhaar'],
     desc: 'Required for succession, insurance claims, property transfer, and pension stoppage.',
     color: '#6b7a8d', bg: '#f0f4f9',
+    applyUrl: 'https://india.gov.in/',
   },
   {
     title: 'Disability Certificate', icon: '♿', ministry: 'District Medical Board',
     time: '15–30 days', fee: 'Free', docs: ['Medical reports', 'Aadhaar Card', 'Passport photos'],
     desc: 'Certifies disability percentage for availing RPWD Act 2016 benefits, concessions, and reservations.',
     color: '#157a3c', bg: '#e8f5ee',
+    applyUrl: 'https://india.gov.in/',
   },
   {
     title: 'Marriage Certificate', icon: '💍', ministry: 'Marriage Registrar',
     time: '15–30 days', fee: '₹100–500', docs: ['Both spouses\' Aadhaar', 'Wedding invitation / photo', '2 witnesses\' ID'],
     desc: 'Legal proof of marriage for joint bank accounts, visa applications, insurance, and property rights.',
     color: '#e8860a', bg: '#fef3e2',
+    applyUrl: 'https://india.gov.in/',
   },
   {
     title: 'Character Certificate', icon: '✅', ministry: 'District Police / SDM',
     time: '7–10 days', fee: '₹50', docs: ['Aadhaar Card', 'Application form', 'No-criminal record declaration'],
     desc: 'Required for government jobs, higher education admissions, and international visa applications.',
     color: '#0f2d5e', bg: '#e8eef8',
+    applyUrl: 'https://india.gov.in/',
   },
 ]
 
@@ -161,6 +176,45 @@ export const NEWS = [
   { date: '12 Jul 2026', title: 'New feature: Track application status via Aadhaar in real time', type: 'New Feature' },
   { date: '08 Jul 2026', title: 'Ayushman Bharat extended: 70+ senior citizens now eligible regardless of income', type: 'Policy' },
   { date: '01 Jul 2026', title: 'CSC centres now authorised to process Voter ID corrections and address changes', type: 'Update' },
+]
+
+export const JOBS = [
+  {
+    id: 1,
+    title: 'CSC Data Entry Operator',
+    department: 'CSC e-Governance Services',
+    location: 'Pan India',
+    salary: '₹15,000–18,000/month',
+    type: 'Full-time',
+    eligibility: '10+2 pass with computer knowledge',
+    closingDate: '31 Jul 2026',
+    description: 'Handle citizen applications, manage digital forms, and support document uploads at the CSC centre.',
+    applyUrl: 'https://csc.gov.in/job-apply/data-entry-operator',
+  },
+  {
+    id: 2,
+    title: 'Village Level Entrepreneur (VLE)',
+    department: 'Digital India CSC Network',
+    location: 'Rural & Semi-Urban Areas',
+    salary: '₹18,000–25,000/month',
+    type: 'Contract',
+    eligibility: 'Graduate with strong communication skills',
+    closingDate: '15 Aug 2026',
+    description: 'Run a CSC outlet, assist citizens with government services, and earn commission on applications.',
+    applyUrl: 'https://csc.gov.in/job-apply/vle',
+  },
+  {
+    id: 3,
+    title: 'CSCs Service Coordinator',
+    department: 'Ministry of Electronics & IT',
+    location: 'State CSC Clusters',
+    salary: '₹22,000–28,000/month',
+    type: 'Contract',
+    eligibility: 'Graduate with 2 years of coordination experience',
+    closingDate: '05 Aug 2026',
+    description: 'Coordinate service delivery, update scheme details, and help CSC centres onboard new citizens.',
+    applyUrl: 'https://csc.gov.in/job-apply/coordinator',
+  },
 ]
 
 export const FAQS = [
