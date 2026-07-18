@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=DM+Mono:wght@400;500&display=swap');
+@import 'tailwindcss';
+
+@theme inline {
+  --font-display: 'Lexend', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-mono: 'DM Mono', monospace;
+
+  --color-navy: #0f2d5e;
+  --color-navy-dark: #091d3e;
+  --color-navy-light: #1a4080;
+  --color-saffron: #e8860a;
+  --color-saffron-light: #f5a623;
+  --color-saffron-pale: #fef3e2;
+  --color-green-gov: #157a3c;
+  --color-green-pale: #e8f5ee;
+  --color-slate-gov: #f0f4f9;
+  --color-ink: #1a2332;
+  --color-ink-muted: #4a5568;
+  --color-border-gov: #d1dae8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'DM Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #c7d2e4;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}

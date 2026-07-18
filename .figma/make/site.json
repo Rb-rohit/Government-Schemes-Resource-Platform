@@ -1,0 +1,10 @@
+{
+  "description": "Access a comprehensive resource platform for all government schemes and online solutions, simplifying navigation for citizens and enhancing service delivery.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
